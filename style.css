@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+    display: flex;
+}
+
+aside, article, main, section {
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+aside, article {
+    flex: 0 0 30dvw;
+}
+
+main, section {
+    flex: 0 0 70dvw;
+}
+
+aside {
+    background-color: #2E578B;
+}
+
+main {
+    background-color: #242E36;
+}
+
+section {
+    background-color: #2E608B;
+}
+
+article {
+    background-color: #2E578B;
+}
+
+/* ---------------------------------------------------------- */
+
+.container {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    transition: all 0.5s ease;
+    flex: 1;
+}
