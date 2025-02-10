@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/against-2');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,17 +17,26 @@ body {
 aside, article, main, section {
     transition: all 0.5s ease;
     display: flex;
-    align-items: center;
-    justify-content: center;
+
+
     color: white;
 }
 
+aside, main {
+    justify-content: center;
+    align-items: center;
+}
+
+article, section {
+    padding: 3rem;
+}
+
 aside, article {
-    flex: 0 0 30dvw;
+    flex: 0 0 40dvw;
 }
 
 main, section {
-    flex: 0 0 70dvw;
+    flex: 0 0 60dvw;
 }
 
 aside {
@@ -44,7 +55,17 @@ article {
     background-color: #2E578B;
 }
 
-/* ---------------------------------------------------------- */
+h1, h2 {
+    font-family: 'against', sans-serif;
+    font-weight: 200;
+    font-size: 96px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+/* GLOBAL -------------------------------------------------- */
 
 .container {
     width: 100dvw;
@@ -57,4 +78,19 @@ article {
     display: flex;
     transition: all 0.5s ease;
     flex: 1;
+}
+
+img {
+    border: white 2px solid; /* tirar */
+}
+
+/* STEP 0 --------------------------------------- */
+
+main img {
+    width: 300px;
+
+}
+
+aside img {
+    width: 490px; /* mudar */
 }
