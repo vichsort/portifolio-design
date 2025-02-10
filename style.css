@@ -31,6 +31,10 @@ article, section {
     padding: 3rem;
 }
 
+section {
+    flex-direction: column;
+}
+
 aside, article {
     flex: 0 0 40dvw;
 }
@@ -53,6 +57,8 @@ section {
 
 article {
     background-color: #2E578B;
+    align-items: center;
+    justify-content: center;
 }
 
 h1, h2 {
@@ -93,4 +99,29 @@ main img {
 
 aside img {
     width: 490px; /* mudar */
+}
+
+section h2 {
+    margin-left: 6rem;
+}
+
+.habilidades {
+    display: flex;
+    justify-content: center;
+}
+
+section img {
+    width: 300px;
+}
+
+article h2 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+article img {
+    width: 276px;
+    height: 304px;
+    border: white 2px solid; 
+    border-radius: 21px;
 }
