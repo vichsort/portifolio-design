@@ -1,0 +1,283 @@
+@import url('https://fonts.cdnfonts.com/css/against-2'); 
+@import url('https://fonts.cdnfonts.com/css/recoleta');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+    display: flex;
+}
+
+aside, article, main, section {
+    transition: all 0.5s ease;
+    display: flex;
+    color: white;
+}
+
+aside, main {
+    justify-content: center;
+    align-items: center;
+}
+
+article, section {padding: 3rem;}
+
+aside, article {flex: 0 0 40dvw;}
+
+main, section {flex: 0 0 60dvw;}
+
+aside {
+    background-color: #2E578B;
+
+    img {
+        width: 490px; /* mudar */
+    }
+}
+
+main {
+    background-color: #242E36;
+
+    img {
+        width: 300px; /* mudar */
+    }
+}
+
+section {
+    background-color: #2E608B;
+    flex-direction: column;
+
+    img {
+        width: 300px;
+    }
+}
+
+article {
+    background-color: #2E578B;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2 {
+    font-family: 'against', sans-serif;
+    font-size: 96px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+p {
+    font-family: 'Recoleta', sans-serif;
+    font-size: 40px;
+}
+
+.container {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    transition: all 0.5s ease;
+    flex: 1;
+}
+
+img { /* tirar */
+    border: white 2px solid; 
+}
+
+.logotipo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* STEP 0 --------------------------------------- */
+
+.container.step-0 {
+    section h2 {margin-left: 6rem;}
+
+    .habilidades {
+        display: flex;
+        justify-content: center;
+    }
+
+    article {
+        h2 {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+
+        img {
+            width: 276px;
+            height: 304px;
+            border: white 2px solid; 
+            border-radius: 21px;
+        }
+    }
+}
+
+/* STEP 1 - Main ------------------ */
+
+.container.step-1 {
+    .row1 {flex: 0 0 95dvh;}
+
+    .row2 {
+        flex: 0 0 5dvh;
+        pointer-events: none;
+    }
+
+    aside {flex: 0 0 0;}
+
+    main {
+        align-items: flex-start;
+        flex: 0 0 100dvw;
+        flex-direction: column;
+        padding: 4rem 14.5rem 0;
+        text-align: center;
+    }
+
+    .sobre {
+        margin-top: 1rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .rede {
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.2s ease-in-out;
+    
+        img {
+            width: 83px;
+        }
+    }
+    
+    .rede:hover {
+        transform: scale(1.1);
+    }
+    
+    .readme {
+        color: white;
+        padding: 5rem;
+        text-align: left;
+        width: 812px;
+        height: 451px;
+        background-color: #1E1D1D;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    
+        .mini {
+            font-size: 12px;
+            margin-bottom: 1rem;
+        }
+    
+        i {
+            color: grey;
+        }
+    
+        hr {
+            color: grey;
+            margin-bottom: 1rem;
+        }
+    
+        h1 {
+            font-family: "Space Mono", serif;
+            font-size: 2rem;
+            margin-bottom: 0.2rem;
+        }
+    
+        p {
+            font-family: "Space Mono", serif;
+            font-size: 1rem;
+            margin-bottom: 0.6rem;
+        }
+    }
+    
+    .readme:hover { /* mudar */
+        filter: blur(1px);
+        transition: all 0.5s ease-in-out;
+    }
+
+}
+
+/* STEP 2 - Habilidades ------------------ */
+
+.container.step-2 {
+    .row1 {
+        flex: 0 0 10vh;
+    }
+
+    .row2 {
+        flex: 0 0 100dvh;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    main {
+        flex: 0 0 100vw;
+        padding: 1rem;
+
+        img {
+            width: 110px;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+    }
+
+    aside {flex: 0 0 0;}
+
+    article {flex: 0 0 0;}
+
+    section {
+        flex: 0 0 100vw;
+        padding: 8rem;
+        text-align: center;
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 4rem;
+        }
+    }
+
+    .habilidades {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-evenly;
+    }
+
+    .habilidade {
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+
+        h2 {
+            font-size: 46px;
+            font-family: 'Recoleta';
+        }
+    }
+
+    .habilidade:hover {
+        transform: scale(1.2);
+    }
+}
