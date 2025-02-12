@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step 4</title>
+    <link rel="stylesheet" href="step4.css">
+</head>
+<body>
+    <div class="container step-4">
+        <div class="row row1">
+            <aside>
+                <h2>Inicio</h2>
+            </aside>
+            <main>
+                <h2>Sobre mim</h2>
+            </main>
+        </div>
+    
+        <div class="row row2">
+            <section>
+                <h2>Habilidades</h2>
+            </section>
+            <article>
+                <h2>Projetos</h2>
+            </article>
+        </div>
+
+        <footer>
+            <div class="logo">
+                <img src="../logo.png" alt="logo">
+                <h1>Vitor Mignoni</h1>
+            </div>
+            <div class="footer-info">
+                <p>Agora que voce viu sobre mim, que tal me falar sobre voce?</p>
+                <div class="redes">
+                    <a onclick="copyClipboard()" class="rede">
+                        <img src="../logo.png" alt="Email">
+                        <p>vichsort@proton.me</p>
+                    </a>
+
+                    <a class="rede" target="_blank" href="https://github.com/vichsort">
+                        <img src="../logo.png" alt="Github">
+                        <p>Github</p>
+                    </a>
+                    <a class="rede" target="_blank" href="https://www.linkedin.com/in/vitor-mignoni-519967321/">
+                        <img src="../logo.png" alt="LinkedIn">
+                        <p>LinkedIn</p>
+                    </a>
+                </div>
+            </div>
+            <div class="spinning">
+                <img src="../logo.png" alt="logo">
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function copyClipboard() {
+            navigator.clipboard.writeText("vichsort@proton.me");
+
+            alert("Copied the text: " + "email");
+        }
+
+    </script>
+</body>
+</html>
