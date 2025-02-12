@@ -340,15 +340,24 @@ img { /* tirar */
 
         h3 {
             font-family: 'against';
-            font-size: 36px;
+            font-size: 32px;
+            margin-bottom: 2rem;
         }
     }
 
     .informacoes {
-        padding: 0.5rem 2rem;
+        padding: 1rem 2rem;
+
+        img {
+            transition: all 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
     }
 
-    .card-heading {
+    .video {
         width: 688px;
         height: 348px;
         border-radius: 10px;

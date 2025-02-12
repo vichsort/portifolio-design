@@ -25,7 +25,10 @@
 
                 <div class="cards">
                     <div class="card">
-                        <img src="../images.jpg" alt="Projeto 1" class="card-heading">
+                        <video class="video">
+                            <source src="../placeholder.mp4" type="video/mp4">
+                            Seu browser não suporta vídeos.
+                        </video>
                         <div class="informacoes">
                             <div class="sobre-card">
                                 <h3>Título do projeto</h3>
@@ -44,7 +47,10 @@
 
                     </div>
                     <div class="card">
-                        <img src="../images.jpg" alt="Projeto 1" class="card-heading">
+                        <video class="video">
+                            <source src="../placeholder.mp4" type="video/mp4">
+                            Seu browser não suporta vídeos.
+                        </video>
                         <div class="informacoes">
                             <div class="sobre-card">
                                 <h3>Título do projeto</h3>
@@ -64,5 +70,20 @@
             </article>
         </div>
     </div>
+
+    <script>
+        const videos = document.querySelectorAll('.video');
+
+        videos.forEach(video => {
+            video.addEventListener('mouseenter', () => {
+                video.play();
+            });
+            
+            video.addEventListener('mouseleave', () => {
+                video.pause();
+                video.currentTime = 0;
+            });
+        });
+    </script>
 </body>
 </html>
